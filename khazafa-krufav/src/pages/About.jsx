@@ -1,49 +1,137 @@
 import React from 'react';
 import { bioData } from '../data/mockData';
+import { User, Film, Heart, GraduationCap, Camera, MessageSquare, Users } from 'lucide-react';
 
 const About = () => {
+  const { details } = bioData;
+
+  // Helper component untuk Section Title
+  const SectionTitle = ({ icon: Icon, title }) => (
+    <div className="mb-6 flex items-center gap-3 border-b border-zinc-800 pb-2">
+      <Icon className="text-orange-500" size={20} />
+      <h3 className="text-xl font-bold uppercase tracking-widest text-white">{title}</h3>
+    </div>
+  );
+
   return (
-    <div className="px-6 py-12 md:py-20">
-      <div className="grid gap-16 lg:grid-cols-2">
-        {/* Image Side */}
-        <div className="relative order-2 lg:order-1">
-          <div className="aspect-4/5 w-full overflow-hidden rounded bg-zinc-900 grayscale transition-all hover:grayscale-0">
-             <img 
-               src="https://placehold.co/800x1000/18181b/f97316?text=Director+Portrait" 
-               alt="Marcus Thorne" 
-               className="h-full w-full object-cover"
-             />
-          </div>
-          <div className="absolute -left-4 -top-4 -z-10 h-full w-full border border-zinc-800"></div>
-          <div className="absolute -bottom-4 -right-4 -z-10 h-full w-full border border-orange-900/50"></div>
+    <div className="mx-auto max-w-5xl px-6 py-12 md:py-20">
+      
+      {/* Header Profile */}
+      <div className="mb-16 flex flex-col gap-8 md:flex-row md:items-center">
+        <div className="h-40 w-40 shrink-0 overflow-hidden rounded-full border-2 border-orange-600/50 bg-zinc-900">
+           <img 
+             src="https://placehold.co/400x400/18181b/f97316?text=Portrait" 
+             alt="Profile" 
+             className="h-full w-full object-cover"
+           />
         </div>
-
-        {/* Text Side */}
-        <div className="order-1 flex flex-col justify-center lg:order-2">
-          <h2 className="mb-6 text-3xl font-bold uppercase tracking-widest text-white md:text-5xl">
-            {bioData.name}
-          </h2>
-          <h3 className="mb-8 text-xl text-orange-500">{bioData.title}</h3>
-          
-          <div className="space-y-6 text-lg leading-relaxed text-zinc-400">
-            <p>
-              Filmmaking is not just about capturing reality, but about constructing a truth that feels more real than the world outside the theater.
-            </p>
-            <p>
-              {bioData.description}
-            </p>
-          </div>
-
-          <div className="mt-12 grid grid-cols-3 gap-8 border-t border-zinc-900 pt-8">
-            {bioData.stats.map((stat, idx) => (
-              <div key={idx} className="text-center md:text-left">
-                <span className="block text-4xl font-black text-white">{stat.value}</span>
-                <span className="mt-1 block text-xs font-bold uppercase tracking-widest text-zinc-600">{stat.label}</span>
-              </div>
-            ))}
-          </div>
+        <div>
+          <h1 className="text-4xl font-black uppercase tracking-tighter text-white md:text-6xl">{bioData.name}</h1>
+          <p className="mt-2 text-xl text-orange-500">{bioData.title}</p>
+          <p className="text-zinc-500">"{bioData.tagline}"</p>
         </div>
       </div>
+
+      <div className="grid gap-12 lg:grid-cols-2">
+        
+        {/* A. BIODATA */}
+        <section>
+          <SectionTitle icon={User} title="Biodata" />
+          <div className="rounded bg-zinc-900/50 p-6">
+            <ul className="space-y-4">
+              {details.biodata.map((item, idx) => (
+                <li key={idx} className="flex flex-col border-b border-zinc-800 pb-2 last:border-0 last:pb-0 sm:flex-row sm:justify-between">
+                  <span className="text-sm font-medium text-zinc-500 uppercase tracking-wider">{item.label}</span>
+                  <span className="text-zinc-200 font-medium text-right">{item.value}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        {/* B & C. LFM EXPERIENCE */}
+        <section>
+          <SectionTitle icon={Film} title="Perjalanan LFM" />
+          <div className="space-y-6 text-zinc-300 leading-relaxed">
+            <div>
+              <h4 className="mb-2 font-bold text-white">Role & Aktivitas</h4>
+              <p>{details.lfmHistory}</p>
+            </div>
+            <div>
+              <h4 className="mb-2 font-bold text-white">Momen Paling Memorable</h4>
+              <p className="italic text-zinc-400">"{details.memorableLFM}"</p>
+            </div>
+          </div>
+        </section>
+
+        {/* E. KARYA SELAMA LFM */}
+        <section>
+          <SectionTitle icon={Camera} title="Karya Di LFM" />
+          <ul className="grid gap-3 sm:grid-cols-1">
+            {details.lfmWorks.map((work, idx) => (
+              <li key={idx} className="flex items-center gap-3 rounded bg-zinc-900 p-3 transition-colors hover:bg-zinc-800">
+                <div className="h-2 w-2 rounded-full bg-orange-500"></div>
+                <span className="font-medium text-zinc-200">{work}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        {/* D. MEMORABLE EDUCATION */}
+        <section>
+          <SectionTitle icon={GraduationCap} title="Pendidikan" />
+          <div className="rounded bg-zinc-900/30 p-6 border border-zinc-800">
+            <h4 className="mb-2 font-bold text-white">Highlight Akademik</h4>
+            <p className="text-zinc-300">{details.memorableEducation}</p>
+          </div>
+        </section>
+
+      </div>
+
+      {/* FULL WIDTH SECTIONS */}
+      <div className="mt-12 grid gap-12 lg:grid-cols-2">
+        
+        {/* F & G. MESSAGES */}
+        <section className="flex flex-col gap-6">
+          <div>
+            <SectionTitle icon={MessageSquare} title="Pesan Untuk Pewawancara" />
+            <blockquote className="border-l-4 border-orange-600 bg-zinc-900/50 p-4 text-lg italic text-zinc-300">
+              "{details.messageInterviewer}"
+            </blockquote>
+          </div>
+          <div>
+            <SectionTitle icon={Heart} title="Pesan Untuk Ca-Kru 2025" />
+            <div className="rounded-lg bg-orange-900/20 p-6 text-orange-200 border border-orange-900/30">
+              {details.messageJuniors}
+            </div>
+          </div>
+        </section>
+
+        {/* H. FOTO KRU FAVORIT */}
+        <section>
+          <SectionTitle icon={Users} title="Kru Favorit" />
+          <div className="group relative aspect-video w-full overflow-hidden rounded-lg bg-zinc-900">
+            <img 
+              src={details.favoriteCrewImage} 
+              alt="Kru Favorit" 
+              className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 transition-opacity group-hover:opacity-100 flex items-end p-4">
+              <p className="text-white font-medium">Kebersamaan adalah kunci produksi.</p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      {/* I. OTHER CONTENT (Optional Footer Note) */}
+      <div className="mt-16 border-t border-zinc-900 pt-8 text-center">
+        <p className="text-zinc-600 text-sm">
+          Portfolio ini dibuat sebagai bagian dari syarat kelulusan tahap pendidikan LFM ITB. <br/>
+          Semua hak cipta materi visual adalah milik pembuat.
+        </p>
+      </div>
+
     </div>
   );
 };
