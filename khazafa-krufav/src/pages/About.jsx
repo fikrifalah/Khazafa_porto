@@ -28,7 +28,7 @@ const About = () => {
         <div>
           <h1 className="text-4xl font-black uppercase tracking-tighter text-white md:text-6xl">{bioData.name}</h1>
           <p className="mt-2 text-xl text-orange-500">{bioData.title}</p>
-          <p className="text-zinc-500">"{bioData.tagline}"</p>
+      
         </div>
       </div>
 
@@ -78,13 +78,13 @@ const About = () => {
         </section>
 
         {/* D. MEMORABLE EDUCATION */}
-        <section>
+        {/* <section>
           <SectionTitle icon={GraduationCap} title="Pendidikan" />
           <div className="rounded bg-zinc-900/30 p-6 border border-zinc-800">
             <h4 className="mb-2 font-bold text-white">Highlight Akademik</h4>
             <p className="text-zinc-300">{details.memorableEducation}</p>
           </div>
-        </section>
+        </section> */}
 
       </div>
 

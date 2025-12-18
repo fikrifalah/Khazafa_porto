@@ -1,24 +1,23 @@
 export const bioData = {
-    name: "Marcus Thorne",
-    title: "Visual Director",
-    tagline: "Shadows speak louder than light.",
-    description: "Specializing in high-contrast narrative cinema. Exploring the silence between chaos.",
-    stats: [
-      { label: "Features", value: "05" },
-      { label: "Shorts", value: "12" },
-      { label: "Festivals", value: "24" }
-    ],
+    name: "Said Muhammad Khazafa",
+    title: "Filmmaker",
+    // tagline: "Shadows speak louder than light.",
+    // description: "Specializing in high-contrast narrative cinema. Exploring the silence between chaos.",
+    // stats: [
+    //   { label: "Features", value: "05" },
+    //   { label: "Shorts", value: "12" },
+    //   { label: "Festivals", value: "24" }
+    // ],
     // BAGIAN BARU: Detail spesifik untuk halaman About (Poin A-I)
     details: {
       biodata: [
-        { label: "Nama Lengkap", value: "Marcus Aurelius Thorne" },
-        { label: "NIM", value: "13521000" },
-        { label: "Jurusan", value: "Teknik Informatika" },
-        { label: "Tempat, Tanggal Lahir", value: "Bandung, 12 Oktober 2002" },
-        { label: "Hobi", value: "Analog Photography, Hiking" },
+        { label: "Nama Lengkap", value: "Said Muhammad Khazafa" },
+        { label: "NIM", value: "12223009" },
+        { label: "Jurusan", value: "Teknik Perminyakan" },
+        { label: "Hobi", value: "Foto dan buat film" },
       ],
-      lfmHistory: "Selama di LFM, saya aktif di divisi Sinematografi. Pernah menjabat sebagai Ketua Pelaksana Pameran Angkatan dan Head of Visual untuk proyek dokumenter tahunan. Saya belajar banyak tentang teknis kamera ARRI dan manajemen set.",
-      memorableLFM: "Momen paling memorable adalah saat syuting 'Midnight Frequency' di hutan pinus Lembang selama 3 hari. Hujan deras turun tepat saat scene klimaks, dan kami memutuskan untuk tetap lanjut (roll camera) yang justru menghasilkan visual paling dramatis di film tersebut.",
+      lfmHistory: "Di LFM kak Khazafa aktif berkreasi",
+      memorableLFM: "momen memorable saat nyakru adalah saat mengerjakan TA dan paling memorable di LFM",
       memorableEducation: "Berhasil menyelesaikan tugas besar Grafika Komputer (membuat engine render 3D) di minggu yang sama dengan deadline pasca-produksi film pendek festival.",
       lfmWorks: [
         "The Silent Echo (Director of Photography)",
