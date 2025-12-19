@@ -26,7 +26,7 @@ export const bioData = {
         "Video Profil ITB 2023 (Camera Assistant)"
       ],
       messageInterviewer: "Terima kasih telah meluangkan waktu membedah portofolio ini. Saya harap diskusi kita bisa membuka perspektif baru tentang bagaimana visual storytelling bisa diterapkan di industri.",
-      messageJuniors: "Untuk Ca-Kru 2025: Jangan takut terlihat bodoh saat belajar. LFM adalah tempat teraman untuk melakukan kesalahan dan memperbaikinya. Nikmati setiap proses capeknya, karena itu yang akan kalian rindukan.",
+      messageJuniors: "Untuk CaKru 2025: Jangan takut terlihat bodoh saat belajar. LFM adalah tempat teraman untuk melakukan kesalahan dan memperbaikinya. Nikmati setiap proses capeknya, karena itu yang akan kalian rindukan.",
       favoriteCrewImage: "https://placehold.co/800x500/18181b/f97316?text=Foto+Bersama+Kru+Favorit"
     }
   };

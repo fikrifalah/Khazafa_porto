@@ -11,7 +11,7 @@ const Home = () => {
         {/* Left Column: Text */}
         <div className="space-y-8">
           <h1 className="text-5xl font-black leading-none tracking-tighter text-white sm:text-7xl lg:text-8xl">
-            KRUFAV <br />
+            KRUFAV KHAZAFA<br />
             <span className="text-zinc-800"></span>
           </h1>
           
@@ -38,7 +38,7 @@ const Home = () => {
         {/* Right Column: Cinematic Placeholder Image */}
         <div className="relative h-[500px] w-full overflow-hidden rounded-sm bg-zinc-900 shadow-2xl lg:h-[700px]">
            <img 
-             src="https://placehold.co/800x1000/111/orange?text=Cinematic+Still" 
+             src="../foto khazafa.jpeg" 
              alt="Featured Work" 
              className="h-full w-full object-cover opacity-80 transition-transform duration-1000 hover:scale-105"
            />

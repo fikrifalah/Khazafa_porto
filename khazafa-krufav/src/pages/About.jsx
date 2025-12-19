@@ -1,6 +1,7 @@
 import React from 'react';
 import { bioData } from '../data/mockData';
 import { User, Film, Heart, GraduationCap, Camera, MessageSquare, Users } from 'lucide-react';
+import { movies } from '../data/mockData';
 
 const About = () => {
   const { details } = bioData;
@@ -20,7 +21,7 @@ const About = () => {
       <div className="mb-16 flex flex-col gap-8 md:flex-row md:items-center">
         <div className="h-40 w-40 shrink-0 overflow-hidden rounded-full border-2 border-orange-600/50 bg-zinc-900">
            <img 
-             src="https://placehold.co/400x400/18181b/f97316?text=Portrait" 
+             src="../foto khazafa cu.jpeg" 
              alt="Profile" 
              className="h-full w-full object-cover"
            />
@@ -67,11 +68,11 @@ const About = () => {
         {/* E. KARYA SELAMA LFM */}
         <section>
           <SectionTitle icon={Camera} title="Karya Di LFM" />
-          <ul className="grid gap-3 sm:grid-cols-1">
-            {details.lfmWorks.map((work, idx) => (
-              <li key={idx} className="flex items-center gap-3 rounded bg-zinc-900 p-3 transition-colors hover:bg-zinc-800">
+          <ul className="grid gap-3 sm:grid-cols-">
+            {movies.map((movie) => (
+              <li key={movie.id} className="flex items-center gap-3 rounded bg-zinc-900 p-3 transition-colors hover:bg-zinc-800">
                 <div className="h-2 w-2 rounded-full bg-orange-500"></div>
-                <span className="font-medium text-zinc-200">{work}</span>
+                <span className="font-medium text-zinc-200">{movie.title}</span>
               </li>
             ))}
           </ul>
@@ -110,9 +111,9 @@ const About = () => {
         {/* H. FOTO KRU FAVORIT */}
         <section>
           <SectionTitle icon={Users} title="foto bersama" />
-          <div className="group relative aspect-video w-full overflow-hidden rounded-lg bg-zinc-900">
+          <div className="group relative aspect-video w-full overflow-hidden rounded-lg bg-zinc-900 h-full">
             <img 
-              src={details.favoriteCrewImage} 
+              src="/foto bareng.jpeg"
               alt="Kru Favorit" 
               className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
@@ -127,8 +128,7 @@ const About = () => {
       {/* I. OTHER CONTENT (Optional Footer Note) */}
       <div className="mt-16 border-t border-zinc-900 pt-8 text-center">
         <p className="text-zinc-600 text-sm">
-          Portfolio ini dibuat sebagai bagian dari syarat kelulusan tahap pendidikan LFM ITB. <br/>
-          Semua hak cipta materi visual adalah milik pembuat.
+          made with love
         </p>
       </div>
 
