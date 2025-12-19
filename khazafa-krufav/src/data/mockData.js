@@ -25,8 +25,8 @@ export const bioData = {
         "Dust & Bones (Editor)",
         "Video Profil ITB 2023 (Camera Assistant)"
       ],
-      messageInterviewer: "rispek fikri",
-      messageJuniors: "Untuk CaKru 2025: semangat menjalani pendidikan",
+      messageInterviewer: "semangat terus ye, jangan lupa kekuatan pertemanan dan nikmati tiap momen nyakru",
+      messageJuniors: "semoga lancar kuliah dan nyakrunya, tambahan : lfm akan selalu ada bagi (ca)kru nya yang mencari",
       favoriteCrewImage: "https://placehold.co/800x500/18181b/f97316?text=Foto+Bersama+Kru+Favorit"
     }
   };
@@ -39,7 +39,7 @@ export const bioData = {
       synopsis: "",
       duration: "15 menit",
       genre: "Drama",
-      image: "https://placehold.co/600x800/09090b/f97316?text=Tak+Sedia+Kala"
+      image: "./tak sedia kala.jpeg"
     },
     {
       id: 2,
@@ -57,7 +57,7 @@ export const bioData = {
       synopsis: "",
       duration: "3m",
       genre: "Drama",
-      image: "https://placehold.co/600x800/09090b/f97316?text=Piala Paling Berharga"
+      image: "./piala paling berharga.jpeg"
     },
     {
       id: 4,
@@ -66,7 +66,7 @@ export const bioData = {
       synopsis: "",
       duration: "10m",
       genre: "Dystopian",
-      image: "https://placehold.co/600x800/09090b/f97316?text=Cecilia"
+      image: "./cecilia.jpeg"
     }, 
     {
       id: 5,
@@ -75,7 +75,7 @@ export const bioData = {
       synopsis: "",
       duration: "12m",
       genre: "Drama",
-      image: "https://placehold.co/600x800/09090b/f97316?text=Cinta Ini Membunuhku"
+      image: "./cinta ini membunuhku.jpeg"
     },
     {
       id: 6,
@@ -93,7 +93,7 @@ export const bioData = {
       synopsis: "",
       duration: "8m",
       genre: "Comedy",
-      image: "https://placehold.co/600x800/09090b/f97316?text=Krugraphic 2",
+      image: "./krugraphic.jpeg",
       link: "https://youtu.be/yhNdiAmFUyM?si=NyLvy1Uxk88GoWmN"
     },
     {
