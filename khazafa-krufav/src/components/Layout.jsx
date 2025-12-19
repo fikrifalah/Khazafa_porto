@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
-import { Video, Menu, X, Github, Linkedin, Mail } from 'lucide-react';
+import { Video, Menu, X, Linkedin } from 'lucide-react';
 
 const Layout = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const location = useLocation(); // Hook to detect current route
+  const location = useLocation();
 
   const links = [
     { name: 'Work', path: '/' },
     { name: 'Portfolio', path: '/portfolio' },
     { name: 'About', path: '/about' },
-    // { name: 'Journal', path: '/blog' },
+    { name: 'Journal', path: '/blog' },
   ];
 
   const isActive = (path) => {
@@ -19,7 +19,8 @@ const Layout = () => {
   };
 
   return (
-    <div className="min-h-screen w-full bg-zinc-950 text-zinc-200 font-sans selection:bg-orange-500 selection:text-white">
+    // 'overflow-x-hidden' prevents the horizontal scrollbar issue on mobile
+    <div className="min-h-screen w-full overflow-x-hidden bg-zinc-950 text-zinc-200 font-sans selection:bg-orange-500 selection:text-white">
       
       {/* Navigation */}
       <nav className="sticky top-0 z-50 border-b border-zinc-900 bg-zinc-950/95 backdrop-blur">
@@ -74,9 +75,8 @@ const Layout = () => {
         )}
       </nav>
 
-      {/* Main Content with Transition Wrapper */}
+      {/* Main Content */}
       <main className="mx-auto max-w-7xl px-0 md:px-6">
-        {/* The 'key' forces a re-render animation on route change */}
         <div key={location.pathname} className="animate-page-enter">
           <Outlet />
         </div>
@@ -91,15 +91,8 @@ const Layout = () => {
           </div>
           <div className="flex gap-6">
             <a href="https://www.linkedin.com/in/said-muhamad-khazafa-921462251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-            
-            <button>
-            <Linkedin className="h-5 w-5 cursor-pointer text-zinc-500 transition-colors hover:text-orange-500" />
-            </button>
-            
+              <Linkedin className="h-5 w-5 cursor-pointer text-zinc-500 transition-colors hover:text-orange-500" />
             </a>
-            
-           
-            
           </div>
         </div>
       </footer>

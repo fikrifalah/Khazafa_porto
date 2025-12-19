@@ -36,7 +36,7 @@ export const bioData = {
       id: 1,
       title: "Tak Sedia Kala",
       year: "2024",
-      synopsis: "A radio host receives a distress call from a cosmonaut who claims to be orbiting a planet that doesn't exist.",
+      synopsis: "",
       duration: "15 menit",
       genre: "Drama",
       image: "https://placehold.co/600x800/09090b/f97316?text=Tak+Sedia+Kala"
@@ -45,7 +45,7 @@ export const bioData = {
       id: 2,
       title: "For Fungschillnaris",
       year: "2023",
-      synopsis: "Two architects trapped in a Brutalist building realize the walls are shifting to keep them inside.",
+      synopsis: "",
       duration: "5m",
       genre: "Comedy",
       image: "https://placehold.co/600x800/09090b/f97316?text=For+Fungschillnaris"
@@ -54,7 +54,7 @@ export const bioData = {
       id: 3,
       title: "Piala Paling Berharga",
       year: "2024",
-      synopsis: "A deep-sea welder discovers a sunken city that perfectly mimics his childhood home.",
+      synopsis: "",
       duration: "3m",
       genre: "Drama",
       image: "https://placehold.co/600x800/09090b/f97316?text=Piala Paling Berharga"
@@ -63,7 +63,7 @@ export const bioData = {
       id: 4,
       title: "Cecilia",
       year: "2025",
-      synopsis: "In a world without water, a mechanic builds a machine to extract moisture from the air, making him a target for the local warlord.",
+      synopsis: "",
       duration: "10m",
       genre: "Dystopian",
       image: "https://placehold.co/600x800/09090b/f97316?text=Cecilia"
@@ -72,7 +72,7 @@ export const bioData = {
       id: 5,
       title: "Cinta Ini Membunuhku",
       year: "2025",
-      synopsis: "A deep-sea welder discovers a sunken city that perfectly mimics his childhood home.",
+      synopsis: "",
       duration: "12m",
       genre: "Drama",
       image: "https://placehold.co/600x800/09090b/f97316?text=Cinta Ini Membunuhku"
@@ -81,7 +81,7 @@ export const bioData = {
       id: 6,
       title: "Nirwarna",
       year: "2025",
-      synopsis: "A deep-sea welder discovers a sunken city that perfectly mimics his childhood home.",
+      synopsis: "",
       duration: "15m",
       genre: "Drama, romance",
       image: "https://placehold.co/600x800/09090b/f97316?text=Nirwarna"
@@ -90,7 +90,7 @@ export const bioData = {
       id: 7,
       title: "Krugraphic 2",
       year: "2025",
-      synopsis: "A deep-sea welder discovers a sunken city that perfectly mimics his childhood home.",
+      synopsis: "",
       duration: "8m",
       genre: "Comedy",
       image: "https://placehold.co/600x800/09090b/f97316?text=Krugraphic 2",
@@ -100,7 +100,7 @@ export const bioData = {
       id: 7,
       title: "Kompilasi Video Rumah Sakit ",
       year: "2023",
-      synopsis: "A deep-sea welder discovers a sunken city that perfectly mimics his childhood home.",
+      synopsis: "",
       duration: "2m",
       genre: "Comedy",
       image: "https://placehold.co/600x800/09090b/f97316?text=Kompilasi Video Rumah Sakit"

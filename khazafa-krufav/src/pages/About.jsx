@@ -15,7 +15,8 @@ const About = () => {
   );
 
   return (
-    <div className="mx-auto max-w-5xl px-6 py-12 md:py-20">
+    // FIX 1: Added 'w-full' and 'overflow-hidden' here to stop the page from leaking sideways
+    <div className="mx-auto max-w-5xl w-full overflow-hidden px-6 py-12 md:py-20">
       
       {/* Header Profile */}
       <div className="mb-16 flex flex-col gap-8 md:flex-row md:items-center">
@@ -27,9 +28,11 @@ const About = () => {
            />
         </div>
         <div>
-          <h1 className="text-4xl font-black uppercase tracking-tighter text-white md:text-6xl">{bioData.name}</h1>
+          {/* FIX 2: Added 'break-words' to Name so long names wrap instead of pushing width */}
+          <h1 className="text-4xl font-black uppercase tracking-tighter text-white break-words md:text-6xl">
+            {bioData.name}
+          </h1>
           <p className="mt-2 text-xl text-orange-500">{bioData.title}</p>
-      
         </div>
       </div>
 
@@ -43,7 +46,8 @@ const About = () => {
               {details.biodata.map((item, idx) => (
                 <li key={idx} className="flex flex-col border-b border-zinc-800 pb-2 last:border-0 last:pb-0 sm:flex-row sm:justify-between">
                   <span className="text-sm font-medium text-zinc-500 uppercase tracking-wider">{item.label}</span>
-                  <span className="text-zinc-200 font-medium text-right">{item.value}</span>
+                  {/* FIX 3: Added 'break-words' to values (like Jurusan) */}
+                  <span className="text-zinc-200 font-medium text-right break-words">{item.value}</span>
                 </li>
               ))}
             </ul>
@@ -54,7 +58,6 @@ const About = () => {
         <section>
           <SectionTitle icon={Film} title="Perjalanan LFM" />
           <div className="space-y-6 text-zinc-300 leading-relaxed">
-           
             <div>
               <h4 className="mb-2 font-bold text-white">Momen Paling Memorable</h4>
               <p className="italic text-zinc-400">"{details.memorableLFM}"</p>
@@ -65,24 +68,17 @@ const About = () => {
         {/* E. KARYA SELAMA LFM */}
         <section>
           <SectionTitle icon={Camera} title="Karya Di LFM" />
-          <ul className="grid gap-3 sm:grid-cols-">
+          {/* FIX 4: Corrected grid class to 'sm:grid-cols-1' (was broken) */}
+          <ul className="grid gap-3 sm:grid-cols-1">
             {movies.map((movie) => (
               <li key={movie.id} className="flex items-center gap-3 rounded bg-zinc-900 p-3 transition-colors hover:bg-zinc-800">
-                <div className="h-2 w-2 rounded-full bg-orange-500"></div>
-                <span className="font-medium text-zinc-200">{movie.title}</span>
+                <div className="h-2 w-2 rounded-full bg-orange-500 shrink-0"></div>
+                {/* FIX 5: Added 'truncate' to prevent long titles from breaking layout */}
+                <span className="font-medium text-zinc-200 truncate">{movie.title}</span>
               </li>
             ))}
           </ul>
         </section>
-
-        {/* D. MEMORABLE EDUCATION */}
-        {/* <section>
-          <SectionTitle icon={GraduationCap} title="Pendidikan" />
-          <div className="rounded bg-zinc-900/30 p-6 border border-zinc-800">
-            <h4 className="mb-2 font-bold text-white">Highlight Akademik</h4>
-            <p className="text-zinc-300">{details.memorableEducation}</p>
-          </div>
-        </section> */}
 
       </div>
 
@@ -122,7 +118,7 @@ const About = () => {
 
       </div>
 
-      {/* I. OTHER CONTENT (Optional Footer Note) */}
+      {/* I. OTHER CONTENT */}
       <div className="mt-16 border-t border-zinc-900 pt-8 text-center">
         <p className="text-zinc-600 text-sm">
           made with love
