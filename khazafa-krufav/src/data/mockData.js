@@ -17,7 +17,7 @@ export const bioData = {
         { label: "Hobi", value: "Foto dan buat film" },
       ],
       lfmHistory: "Di LFM kak Khazafa aktif berkreasi",
-      memorableLFM: "momen memorable saat nyakru adalah saat mengerjakan TA dan paling memorable di LFM adalah",
+      memorableLFM: "momen memorable saat nyakru adalah saat mengerjakan TA dan paling memorable di LFM adalah pergi ke JAFF",
       memorableEducation: "Berhasil menyelesaikan tugas besar Grafika Komputer (membuat engine render 3D) di minggu yang sama dengan deadline pasca-produksi film pendek festival.",
       lfmWorks: [
         "The Silent Echo (Director of Photography)",
@@ -48,7 +48,8 @@ export const bioData = {
       synopsis: "",
       duration: "5m",
       genre: "Comedy",
-      image: "https://placehold.co/600x800/09090b/f97316?text=For+Fungschillnaris"
+      image: "https://placehold.co/600x800/09090b/f97316?text=For+Fungschillnaris",
+      link: "https://www.youtube.com/watch?v=nNL_oQS-8aw&list=RDnNL_oQS-8aw&start_radio=1"
     },
     {
       id: 3,

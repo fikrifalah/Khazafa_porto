@@ -9,8 +9,8 @@ const Layout = () => {
   const links = [
     { name: 'Work', path: '/' },
     { name: 'Portfolio', path: '/portfolio' },
-    { name: 'About', path: '/about' },
-    { name: 'Journal', path: '/blog' },
+    { name: 'About', path: '/about' }
+    // { name: 'Journal', path: '/blog' },
   ];
 
   const isActive = (path) => {
