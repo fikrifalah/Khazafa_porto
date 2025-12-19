@@ -54,10 +54,7 @@ const About = () => {
         <section>
           <SectionTitle icon={Film} title="Perjalanan LFM" />
           <div className="space-y-6 text-zinc-300 leading-relaxed">
-            <div>
-              <h4 className="mb-2 font-bold text-white">Role & Aktivitas</h4>
-              <p>{details.lfmHistory}</p>
-            </div>
+           
             <div>
               <h4 className="mb-2 font-bold text-white">Momen Paling Memorable</h4>
               <p className="italic text-zinc-400">"{details.memorableLFM}"</p>

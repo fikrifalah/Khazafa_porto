@@ -10,7 +10,7 @@ const Layout = () => {
     { name: 'Work', path: '/' },
     { name: 'Portfolio', path: '/portfolio' },
     { name: 'About', path: '/about' },
-    { name: 'Journal', path: '/blog' },
+    // { name: 'Journal', path: '/blog' },
   ];
 
   const isActive = (path) => {
