@@ -86,13 +86,20 @@ const Layout = () => {
       <footer className="mt-20 border-t border-zinc-900 bg-black py-12 text-center md:text-left">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 px-6 md:flex-row">
           <div>
-            <h4 className="text-lg font-bold text-white">MARCUS THORNE</h4>
+            <h4 className="text-lg font-bold text-white">Khazafa</h4>
             <p className="text-sm text-zinc-500">Director & Cinematographer</p>
           </div>
           <div className="flex gap-6">
-            <Github className="h-5 w-5 cursor-pointer text-zinc-500 transition-colors hover:text-orange-500" />
+            <a href="https://www.linkedin.com/in/said-muhamad-khazafa-921462251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+            
+            <button>
             <Linkedin className="h-5 w-5 cursor-pointer text-zinc-500 transition-colors hover:text-orange-500" />
-            <Mail className="h-5 w-5 cursor-pointer text-zinc-500 transition-colors hover:text-orange-500" />
+            </button>
+            
+            </a>
+            
+           
+            
           </div>
         </div>
       </footer>

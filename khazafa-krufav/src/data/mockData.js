@@ -17,7 +17,7 @@ export const bioData = {
         { label: "Hobi", value: "Foto dan buat film" },
       ],
       lfmHistory: "Di LFM kak Khazafa aktif berkreasi",
-      memorableLFM: "momen memorable saat nyakru adalah saat mengerjakan TA dan paling memorable di LFM",
+      memorableLFM: "momen memorable saat nyakru adalah saat mengerjakan TA dan paling memorable di LFM adalah",
       memorableEducation: "Berhasil menyelesaikan tugas besar Grafika Komputer (membuat engine render 3D) di minggu yang sama dengan deadline pasca-produksi film pendek festival.",
       lfmWorks: [
         "The Silent Echo (Director of Photography)",
@@ -34,40 +34,78 @@ export const bioData = {
   export const movies = [
     {
       id: 1,
-      title: "Midnight Frequency",
+      title: "Tak Sedia Kala",
       year: "2024",
       synopsis: "A radio host receives a distress call from a cosmonaut who claims to be orbiting a planet that doesn't exist.",
-      duration: "1h 42m",
-      genre: "Sci-Fi Thriller",
-      image: "https://placehold.co/600x800/09090b/f97316?text=Midnight+Freq"
+      duration: "15 menit",
+      genre: "Drama",
+      image: "https://placehold.co/600x800/09090b/f97316?text=Tak+Sedia+Kala"
     },
     {
       id: 2,
-      title: "The Concrete Garden",
+      title: "For Fungschillnaris",
       year: "2023",
       synopsis: "Two architects trapped in a Brutalist building realize the walls are shifting to keep them inside.",
-      duration: "2h 05m",
-      genre: "Psychological Horror",
-      image: "https://placehold.co/600x800/09090b/f97316?text=Concrete+Garden"
+      duration: "5m",
+      genre: "Comedy",
+      image: "https://placehold.co/600x800/09090b/f97316?text=For+Fungschillnaris"
     },
     {
       id: 3,
-      title: "Echoes of Cobalt",
-      year: "2021",
+      title: "Piala Paling Berharga",
+      year: "2024",
       synopsis: "A deep-sea welder discovers a sunken city that perfectly mimics his childhood home.",
-      duration: "1h 30m",
-      genre: "Mystery",
-      image: "https://placehold.co/600x800/09090b/f97316?text=Echoes+of+Cobalt"
+      duration: "3m",
+      genre: "Drama",
+      image: "https://placehold.co/600x800/09090b/f97316?text=Piala Paling Berharga"
     },
     {
       id: 4,
-      title: "Rust",
-      year: "2020",
+      title: "Cecilia",
+      year: "2025",
       synopsis: "In a world without water, a mechanic builds a machine to extract moisture from the air, making him a target for the local warlord.",
-      duration: "1h 55m",
+      duration: "10m",
       genre: "Dystopian",
-      image: "https://placehold.co/600x800/09090b/f97316?text=Rust"
-    }
+      image: "https://placehold.co/600x800/09090b/f97316?text=Cecilia"
+    }, 
+    {
+      id: 5,
+      title: "Cinta Ini Membunuhku",
+      year: "2025",
+      synopsis: "A deep-sea welder discovers a sunken city that perfectly mimics his childhood home.",
+      duration: "12m",
+      genre: "Drama",
+      image: "https://placehold.co/600x800/09090b/f97316?text=Cinta Ini Membunuhku"
+    },
+    {
+      id: 6,
+      title: "Nirwarna",
+      year: "2025",
+      synopsis: "A deep-sea welder discovers a sunken city that perfectly mimics his childhood home.",
+      duration: "15m",
+      genre: "Drama, romance",
+      image: "https://placehold.co/600x800/09090b/f97316?text=Nirwarna"
+    },
+    {
+      id: 7,
+      title: "Krugraphic 2",
+      year: "2025",
+      synopsis: "A deep-sea welder discovers a sunken city that perfectly mimics his childhood home.",
+      duration: "8m",
+      genre: "Comedy",
+      image: "https://placehold.co/600x800/09090b/f97316?text=Krugraphic 2"
+    },
+    {
+      id: 7,
+      title: "Kompilasi Video Rumah Sakit ",
+      year: "2023",
+      synopsis: "A deep-sea welder discovers a sunken city that perfectly mimics his childhood home.",
+      duration: "2m",
+      genre: "Comedy",
+      image: "https://placehold.co/600x800/09090b/f97316?text=Kompilasi Video Rumah Sakit"
+    },
+   
+    
   ];
   
   export const blogPosts = [
