@@ -33,9 +33,11 @@ const MovieCard = ({ movie }) => {
           {movie.synopsis}
         </p>
         
-        <button className="flex w-full items-center justify-center gap-2 rounded bg-orange-600 px-4 py-3 text-sm font-bold text-white transition-colors hover:bg-orange-500">
-          <Play size={16} fill="currentColor" /> WATCH TRAILER
+      <a href={movie.link}>
+        <button className="flex w-full items-center justify-center gap-2 rounded bg-orange-600 px-4 py-3 text-sm font-bold text-white transition-colors hover:bg-orange-  500 cursor-pointer">
+          <Play size={16} fill="currentColor" /> WATCH 
         </button>
+      </a>
       </div>
     </div>
   );

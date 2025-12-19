@@ -93,7 +93,8 @@ export const bioData = {
       synopsis: "A deep-sea welder discovers a sunken city that perfectly mimics his childhood home.",
       duration: "8m",
       genre: "Comedy",
-      image: "https://placehold.co/600x800/09090b/f97316?text=Krugraphic 2"
+      image: "https://placehold.co/600x800/09090b/f97316?text=Krugraphic 2",
+      link: "https://youtu.be/yhNdiAmFUyM?si=NyLvy1Uxk88GoWmN"
     },
     {
       id: 7,
